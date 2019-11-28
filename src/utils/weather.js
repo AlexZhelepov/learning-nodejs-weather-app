@@ -12,7 +12,8 @@ const weather = ({longitude, lattitude}, callback) => {
         }
         else {
             const forecastData = body.currently
-            callback(undefined, forecastData )
+            const forecastString = 'The temperature is ' + forecastData.temperature + ', ' + 'the humidity is ' + (forecastData.humidity * 100) + '%'
+            callback(undefined, forecastString)
         }
     })
 }

@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (e) => {
 
             forecastPar_1.textContent = data.location
             forecastPar_2.textContent = data.address
-            forecastPar_3.textContent = 'Температура: ' + data.forecastData.temperature
+            forecastPar_3.textContent = data.forecast
         })
     })
 })
